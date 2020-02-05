@@ -1,0 +1,390 @@
+body {
+    height:100%;
+    padding-left:100px;
+    padding-right: 100px;
+    font-family: Courier;
+
+}
+ul li{
+    padding-left:20px;
+    list-style: none;
+    display:inline;
+}
+.pf_title{
+    height:130px;
+    /*background-color: azure;*/
+}
+.pf_title_box{
+
+    height:100%;
+    margin: 0 auto;
+    position: relative;
+    top: 45%;
+    transform: translateY(-20%);
+    font-family: Courier;
+
+}
+.pf_title_box-name {
+    font-size: 22px;
+    float: left;
+    font-weight:400;
+}
+.pf_title_box-name-f{
+    color: #7C7B80;
+    text-shadow: 1px 0px 1px #7C7B80;
+    float:left;
+}
+.pf_title_box-name-s{
+    color:#00c9b1;
+    text-shadow: 1px 0px 1px #00c9b1;
+    float:left;
+}
+.pf_title_box-menu{
+    padding-top:15px;
+    color:#BBBABB;
+    float:right;
+}
+
+.pf_card{
+    /*height:100%;*/
+    position:relative;
+
+    box-shadow: 4px 2px 40px #7C7B80;
+    border-radius: 15px;
+    animation:mymove1 1s ease-in;
+
+}
+@keyframes mymove1 {
+    0%{
+        left:1000px;
+        top:200px;
+        weight:0%;
+        height:0%;
+    }
+   100%{
+      left:0;
+       top:0;
+       weight:100%;
+       height:100%;
+   }
+}
+
+
+.pf_card-fp{
+    border:1px rgba(200,200,200,0);
+
+   /* border-radius: 15px;*/
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    background-color: #33717f;
+    z-index:-1;
+}
+.pf_card-fp-photo{
+    float:left;
+    display:inline-block;
+
+    border:3px solid #f7e9e3;
+
+    margin-top:70px;
+    background-color:#7C7B80;
+    z-index:0;
+    box-shadow: 1px 2px 5px #7C7B80;
+
+
+}
+.pf_card-fp-photo:hover{
+    transform:translateY(-9px);
+}
+/*.pf-photo{*/
+/*    weight:230px;*/
+/*    height:260px;*/
+/*}*/
+.pf_card-fp-others{
+    float:right;
+    weight:50%;
+    height:100%;
+    margin-top:80px;
+    /*margin-right: 100px;*/
+    text-align: center;
+    z-index:0;
+    color:#ffffff;
+}
+.pf_card-fp-others h1{
+    font-weight:600;
+    font-size:48px;
+    padding-right: 200px;
+
+}
+.pf_card-fp-others p{
+    margin-top: -10px;
+    padding-right:180px;
+    height:20px;
+
+}
+.pf_card-fp-others-p:hover{
+
+    animation: mymove2 3s ease-in-out infinite;
+}
+
+@keyframes mymove2 {
+    0%{
+        font-size: 16px;
+
+    }
+    /*A*/
+   10%{
+       font-size:8px;
+       /*diaplay:none;*/
+    }
+    /*20%{*/
+    /*    font-size:12px;*/
+    /*}*/
+
+    /*B*/
+    25%{
+        font-size: 16px;
+    }
+    50%{
+        font-size: 16px;
+    }
+    /*B*/
+    60%{
+        font-size:8px;
+        /*diaplay:none;*/
+    }
+    /*70%{*/
+    /*    font-size: 12px;*/
+    /*}*/
+    /*A*/
+    75%{
+        font-size: 16px;
+    }
+    100%{
+        font-size: 16px;
+    }
+    /*A*/
+
+
+}
+/*.pf_card-fp-others-p1{*/
+/*    display:block*/
+/*}*/
+/*.pf_card-fp-others-p2{*/
+/*    display:none*/
+/*    */
+/*}*/
+
+.pf_card-fp-others-imgbox{
+    margin-right: 165px;
+
+
+}
+.pf_card-fp-others-img{
+    margin-top:10px;
+    margin-right: 20px;
+    background-color: #fff;
+    border:1px #fff;
+    border-radius: 50%;
+    color:#7C7B80;
+}
+.pf_card-sp{
+    weight:100%;
+    height:350px;
+    padding-top:60px;
+    padding-left:20px;
+    padding-right:20px;
+    border:1px rgba(200,200,200,0);
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    /*background-color: #f7e9e3;*/
+    background-color: #ffc0c2;
+
+}
+.card-sp-profile1{
+    float:left;
+    margin-right:30px;
+    margin-left:20px;
+    margin-top:20px;
+
+}
+.card-sp-profile2{
+    float:right;
+    margin-right:30px;
+    margin-left:20px;
+    margin-top:20px;
+
+
+}
+.card-sp-profile1 h1{
+    margin-top:0px;
+
+}
+.card-sp-profile1 h1 span{
+
+    color:#33BD7F;
+}
+/*.card-table{*/
+/*    margin-top:20px;*/
+/*}*/
+.col1{
+    margin-left:10px;
+    width:150px;
+    float:left;
+    margin-top:15px;
+    color:#27323a;
+    font-weight:bold;
+}
+.col2{
+    margin-left:10px;
+    width:450px;
+    float:left;
+    margin-top:15px;
+    color:#435055;
+}
+
+@media screen and (max-width:790px){
+    .pf_card-fp{height:500px;}
+    .pf_card-fp-photo{
+        text-align: center;
+        left:50%;
+        margin-left:20%;
+        weight:115px;
+        height:130px;
+    }
+    .pf-photo{
+        weight:115px;
+        height:130px;
+    }
+    .pf_card-fp-others{
+
+        margin-left:20%;
+    }
+    .pf_card-fp-others h1{
+        font-size:22px;
+
+    }
+}
+@media screen and (min-width:790px){
+    .pf_card-fp{height:600px;}
+    .pf_card-fp-photo{
+
+        text-align: center;
+        left:50%;
+        margin-left:35%;
+        weight:230px;
+        height:260px;
+    }
+    .pf-photo{
+        weight:230px;
+        height:260px;
+    }
+
+    .pf_card-fp-others{
+
+        margin-left:20%;
+    }
+
+
+}
+
+@media screen and (max-width:1035px) {
+
+    .card-sp-profile1 h1{
+        font-size:20px;
+    }
+    .card-sp-profile1 p{
+        font-size:14px;
+    }
+}
+
+
+@media screen and (min-width:1132px){
+    .pf_card-fp{height:300px;}
+    .pf_card-fp-photo{
+        margin-left:70px;
+        weight:230px;
+        height:260px;
+    }
+    .pf-photo{
+        weight:230px;
+        height:260px;
+    }
+    .pf_card-fp-others {
+        margin-right:-90px;
+
+    }
+
+}
+
+@media screen and (max-width:1153px){
+
+    .pf_card-sp{
+        padding-right:0;
+
+    }
+    .card-sp-profile1{
+        margin-right:-200px;
+
+    }
+    .card-sp-profile2{
+        margin-left:-150px;
+        margin-right:0px;
+    }
+    .card-table{
+        /*margin-top: -300px;*/
+        position:relative;
+        margin-top:-350px;
+    }
+    .col1{
+
+        margin-left:0px;
+        width:80px;
+        font-size:10px;
+
+
+    }
+    .col2{
+
+        margin-left:5px;
+        width:300px;
+
+        font-size:10px;
+    }
+
+}
+@media screen and (max-width:900px){
+    .card-table{
+        /*margin-top: -300px;*/
+        position:relative;
+        margin-top:-130px;
+        margin-left:-150px;
+    }
+    .pf_card-sp{
+        height:500px;
+    }
+}
+@media screen and (max-width:700px){
+    .card-table{
+        /*margin-top: -300px;*/
+        position:relative;
+        margin-top:-50px;
+        margin-left:-200px;
+    }
+}
+@media screen and (min-width:1353px){
+    .pf_card-fp-photo{
+        margin-left:70px;
+        weight:230px;
+        height:260px;
+
+    }
+    .pf-photo{
+        weight:230px;
+        height:260px;
+    }
+    .pf_card-fp-others {
+        margin-right:100px;
+    }
+
+
+}
