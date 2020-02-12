@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Profile</title>
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/resume.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/services.css">
+
 </head>
 <body>
     <div class="pf_title">
@@ -165,6 +166,8 @@
             <h1>Services</h1>
         </div>
         <div class="pf_services-sp" >
+            <div class="pf_services-sp-pic"><img src="https://w.wallhaven.cc/full/k9/wallhaven-k9vygm.png"></div>
+            <h3>Web Design</h3>
         </div>
     </div>
     <div class="pf_blog">
@@ -172,7 +175,24 @@
             <h1>Blog</h1>
         </div>
         <div class="pf_blog-sp" >
-
+            <div class="pf_blog-sp-left">
+                <div class="blog-pic"><img src="https://w.wallhaven.cc/full/4v/wallhaven-4vmxom.jpg"></div>
+                <div class="blog-date">
+                    <h3>6</h3>
+                    <p>Dec</p>
+                </div>
+                <span>Travel</span>
+                <h2>Bootstrap is the <br/>Most Popular Framework</h2>
+            </div>
+            <div class="pf_blog-sp-right">
+                <div class="blog-pic"><img src="https://w.wallhaven.cc/full/lq/wallhaven-lqwkql.jpg""></div>
+                <div class="blog-date">
+                    <h3>3</h3>
+                    <p>Nov</p>
+                </div>
+                <span>JQuery</span>
+                <h2>One Framework,Every Device</h2>
+            </div>
         </div>
     </div>
     <div class="pf_contact">
@@ -180,8 +200,23 @@
             <h1>Contact</h1>
         </div>
         <div class="pf_contact-sp" >
+            <div id="container">
+
+            </div>
         </div>
     </div>
+
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=5513bfabf4de1cb54617748f0e645154"></script>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
     <script type="module" src="js/home.js"></script>
+    <script>
+        var map = map = new AMap.Map('container', {
+            resizeEnable: true
+        });
+
+        map.on("complete", function(){
+            log.success("地图加载完成！");
+        });
+    </script>
 </body>
 </html>
